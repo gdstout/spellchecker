@@ -1,0 +1,32 @@
+CHANGELOG FOR hw1.10
+	Griffin Stout
+
+	04/19/2019
+	Today I wrote some basic code to get ncurses working. You can now type
+	in characters and it prints them on the screen. I'm having issues with
+	loading the dictionary in because it's too big for the memory. Update:
+	I did some research and found a think called a Bloom Filter. Will
+	try to implement this
+
+	04/20/2019
+
+	Finished the implementation of bloom filter. Used murmur hash 2 by
+	Austin Applyby for my hashing function but I think that's ok. Now I just
+	need to make it check the word after you press space.
+
+	04/25/2019
+
+	I couldn't get the bloom filter to be accurate enough- it had a pretty
+	high collision rate. So now I will go back to a smaller dictionary in
+	order to load it into the program. I downloaded the linux one which is
+	only ~45k words but should be fine for my purposes.
+
+	update: it was able to load the dictionary. Now I just need to
+	implement binary search on the array. This is one of the fastest search
+	algorithms with O(logn). If it is still too long I will implement
+	threads to let continuous typing occur.
+
+	04/28/2019
+
+	Today I finished writing my spellcheck code. See the readme on how to
+	use it. It's not perfect but it works.

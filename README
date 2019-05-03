@@ -1,0 +1,12 @@
+README for hw1.10
+Griffin Stout
+
+To build my program, type 'make'. Then type ./spellcheck to run it.
+
+The spellchecker will change the text color to red of any word it cannot find in
+the dictionary. It runs a check on a word when you press the space bar. You must
+fully delete a word to make it's incorrect status go away. The dictionary is not
+case sensitive. This is not a grammar checker, but it will ignore basic
+punctuation. 
+
+Pressing 'ENTER' doesn't do anything and it won't check the word if you do. 
